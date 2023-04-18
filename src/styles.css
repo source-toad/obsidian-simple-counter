@@ -1,0 +1,29 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+}
+
+.counter button {
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.counter button:hover {
+    color: blue;
+}

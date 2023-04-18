@@ -1,4 +1,8 @@
-import { App, MarkdownView, Plugin, TFile } from 'obsidian';
+import { MarkdownRenderChild } from "obsidian";
+import { Plugin } from "obsidian";
+import { MarkdownPostProcessorContext } from "obsidian";
+import { MarkdownRenderer } from "obsidian";
+import MarkdownIt from 'markdown-it';
 
 export default class CounterPlugin extends Plugin {
     async onload() {
