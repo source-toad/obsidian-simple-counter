@@ -1,11 +1,11 @@
 {
 	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"name": "Simple Counter",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"description": "This is a simple in-note counter for Obsidian.",
+	"author": "Toad",
+	"authorUrl": "https://github.com/source-toad",
+	"fundingUrl": "https://www.buymeacoffee.com/sourcetoad",
+	"isDesktopOnly": true
 }
