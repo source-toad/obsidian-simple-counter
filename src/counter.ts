@@ -3,7 +3,7 @@ import { CounterPluginSettings } from './settings';
 
 
 export class CounterRenderer {
-    src: BigInteger;
+    src: number;
   
     constructor(source: string, el: HTMLElement, settings: CounterPluginSettings) {
     const match = source.trim().match(/^counter:\s*(-?\d+)\s*$/);
