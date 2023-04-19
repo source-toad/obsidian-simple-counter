@@ -1,5 +1,5 @@
 {
-	"id": "obsidian-sample-plugin",
+	"id": "obsidian-simple-counter",
 	"name": "Simple Counter",
 	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
