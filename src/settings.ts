@@ -8,9 +8,7 @@ export interface CounterPluginSettings {
 	defaultCommentMaxWidth: string;
 }
 
-export const DEFAULT_SETTINGS: CounterPluginSettings = {
-	defaultLeftTitle: '',
-	defaultRightTitle: '',
-	defaultMessageMaxWidth: '60%',
-	defaultCommentMaxWidth: '60%',
-}
+
+
+
+

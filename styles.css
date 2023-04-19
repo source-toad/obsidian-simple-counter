@@ -1,38 +1,36 @@
 /* Styles for the counter buttons */
-.counter-button {
-  background-color: red !important;
-  display: inline-block !important;
-  margin-right: 5px !important;
-}
 
-.counter-button button {
-  background-color: #ff0000 !important ;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Position the counter and the buttons */
+/*Whole Container*/
 .counter {
-  background-color: red !important;
+  display: inline-flex;
+}
+
+/* Whole Left/Right Containers*/
+.decrement-container, .increment-container {
+  height: 100%;
+}
+/*Individual Button Container*/
+.counter-button {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: fit-content;
+  flex-direction: column;
 }
 
-/* Position the counter value */
-.counter span {
-  background-color: red !important;
-  margin-right: 5px;
+/*Button Adjustments*/
+.counter-button button {
+  border-radius: 2px; 
+  cursor: pointer;
+  height:8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 2px;
 }
 
-.increment-button :not(.clickable-icon) {
-  margin-right: 0.5em;
+/*Counter Value Adjustments*/
+.counter-value {
+  font-size: 16px;
+  text-align: center;
+  width: 24px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
-.decrement-button {
-  margin-right: 0.2em;
-}

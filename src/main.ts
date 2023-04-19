@@ -1,6 +1,5 @@
 import { Plugin, MarkdownPostProcessorContext } from "obsidian";
-import "./styles.css";
-import './settings';
+import "./settings";
 
 export default class CounterPlugin extends Plugin {
     counterRegex = /counter:\s*(\d+)\s*/;
@@ -26,19 +25,32 @@ export default class CounterPlugin extends Plugin {
                     });
                     container.setAttr("data-counter-value", counterValue.toString());
 
-                    let counterSpan = container.createSpan();
+                    let decrementContainer = container.createDiv({ cls: "decrement-container" });
+
+                    decrementContainer
+                    .createDiv({ cls: "counter-button" })
+                    .createEl("button", { text: "-", cls: "decrement-button" })
+                    .addEventListener("click", () => {
+                        counterValue--;
+                        container.setAttr("data-counter-value", counterValue.toString());
+                        counterSpan.innerText = counterValue.toString();
+                    });
+
+                    decrementContainer
+                    .createDiv({ cls: "counter-button" })
+                    .createEl("button", { text: "--", cls: "decrement-button" })
+                    .addEventListener("click", () => {
+                        counterValue -= 5;
+                        container.setAttr("data-counter-value", counterValue.toString());
+                        counterSpan.innerText = counterValue.toString();
+                    });
+
+                    let counterSpan = container.createSpan({ cls: "counter-value" });
                     counterSpan.innerText = counterValue.toString();
 
-                    container
-                        .createDiv({ cls: "counter-button" })
-                        .createEl("button", { text: "-", cls: "decrement-button" })
-                        .addEventListener("click", () => {
-                            counterValue--;
-                            container.setAttr("data-counter-value", counterValue.toString());
-                            counterSpan.innerText = counterValue.toString();
-                        });
+                    let incrementContainer = container.createDiv({ cls: "increment-container" });
 
-                    container
+                    incrementContainer
                         .createDiv({ cls: "counter-button" })
                         .createEl("button", { text: "+", cls: "increment-button" })
                         .addEventListener("click", () => {
@@ -46,6 +58,15 @@ export default class CounterPlugin extends Plugin {
                             container.setAttr("data-counter-value", counterValue.toString());
                             counterSpan.innerText = counterValue.toString();
                         });
+
+                    incrementContainer
+                    .createDiv({ cls: "counter-button" })
+                    .createEl("button", { text: "++", cls: "increment-button" })
+                    .addEventListener("click", () => {
+                        counterValue += 5;
+                        container.setAttr("data-counter-value", counterValue.toString());
+                        counterSpan.innerText = counterValue.toString();
+                    });
 
                     parent.replaceChild(container, node);
                 });
