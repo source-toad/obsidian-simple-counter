@@ -68,7 +68,9 @@ export default class CounterPlugin extends Plugin {
                         counterSpan.innerText = counterValue.toString();
                     });
 
-                    parent.replaceChild(container, node);
+                    if (parent) {
+                        parent.replaceChild(container, node);
+                      }
                 });
             }
         );
