@@ -1,19 +1,22 @@
 /* Styles for the counter buttons */
 .counter-button {
-  display: inline-block;
-  margin-right: 5px;
+  background-color: red !important;
+  display: inline-block !important;
+  margin-right: 5px !important;
 }
 
 .counter-button button {
-  background-color: #ff0000;
+  background-color: #ff0000 !important ;
   color: #fff;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Position the counter and the buttons */
 .counter {
+  background-color: red !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,25 +25,11 @@
 
 /* Position the counter value */
 .counter span {
+  background-color: red !important;
   margin-right: 5px;
 }
 
-.counter {
-  display: inline-flex;
-  align-items: center;
-}
-
-.counter-button {
-  background-color: red;
-  color: white;
-  padding: 0.2em 0.5em;
-  margin-right: 0.5em;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.increment-button {
+.increment-button :not(.clickable-icon) {
   margin-right: 0.5em;
 }
 
