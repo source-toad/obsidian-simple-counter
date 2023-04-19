@@ -1,14 +1,14 @@
 import { App, Setting, PluginSettingTab } from 'obsidian';
-import DialoguePlugin from './main';
+import CounterPlugin from './main';
 
-export interface DialoguePluginSettings {
+export interface CounterPluginSettings {
 	defaultLeftTitle: string;
 	defaultRightTitle: string;
 	defaultMessageMaxWidth: string;
 	defaultCommentMaxWidth: string;
 }
 
-export const DEFAULT_SETTINGS: DialoguePluginSettings = {
+export const DEFAULT_SETTINGS: CounterPluginSettings = {
 	defaultLeftTitle: '',
 	defaultRightTitle: '',
 	defaultMessageMaxWidth: '60%',

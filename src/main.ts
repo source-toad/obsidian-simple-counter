@@ -1,14 +1,17 @@
 import { Plugin } from "obsidian";
 import { CounterRenderer } from './counter';
+import { CounterPluginSettings } from "./settings";
 //import { DEFAULT_SETTINGS, DialoguePluginSettings, DialogueSettingTab } from './settings';
 
 export default class CounterPlugin extends Plugin {
-  async onload() {
+  settings: CounterPluginSettings;
+  
+    async onload() {
     console.log('Loaded Counter Plugin');
 
     this.registerMarkdownCodeBlockProcessor(
         'counter', 
-        (source, el, ctx) => {
+        (src, el, ctx) => {
       new CounterRenderer (src, el, this.settings);
     });
   }

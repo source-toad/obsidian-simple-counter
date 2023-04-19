@@ -1,4 +1,6 @@
 import { PluginSettingTab, Setting } from 'obsidian';
+import { CounterPluginSettings } from './settings';
+
 
 export class CounterRenderer {
     src: BigInteger;
