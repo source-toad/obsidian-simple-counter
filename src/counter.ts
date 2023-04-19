@@ -1,7 +1,9 @@
 import { PluginSettingTab, Setting } from 'obsidian';
 
 export class CounterRenderer {
-  constructor(source: string, el: HTMLElement, settings: CounterPluginSettings) {
+    src: BigInteger;
+  
+    constructor(source: string, el: HTMLElement, settings: CounterPluginSettings) {
     const match = source.trim().match(/^counter:\s*(-?\d+)\s*$/);
 
     if (!match) {

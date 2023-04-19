@@ -1,6 +1,6 @@
 import { Plugin } from "obsidian";
 import { CounterRenderer } from './counter';
-import { DEFAULT_SETTINGS, DialoguePluginSettings, DialogueSettingTab } from './settings';
+//import { DEFAULT_SETTINGS, DialoguePluginSettings, DialogueSettingTab } from './settings';
 
 export default class CounterPlugin extends Plugin {
   async onload() {
