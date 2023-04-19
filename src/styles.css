@@ -1,29 +1,26 @@
-/*
+/* Styles for the counter buttons */
+.counter-button {
+  display: inline-block;
+  margin-right: 5px;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.counter-button button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
-If your plugin does not need CSS, delete this file.
-
-*/
-
+/* Position the counter and the buttons */
 .counter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0;
-    padding: 0.5em;
-    border: 1px solid #ddd;
-    border-radius: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
 }
 
-.counter button {
-    font-size: 1.5em;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.counter button:hover {
-    color: blue;
+/* Position the counter value */
+.counter span {
+  margin-right: 5px;
 }

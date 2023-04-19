@@ -7,5 +7,6 @@
 	"author": "Toad",
 	"authorUrl": "https://github.com/source-toad",
 	"fundingUrl": "https://www.buymeacoffee.com/sourcetoad",
-	"isDesktopOnly": true
+	"isDesktopOnly": true,
+	"styles": "styles.css"
 }
