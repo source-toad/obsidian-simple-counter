@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-sample-plugin",
 	"name": "Simple Counter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "This is a simple in-note counter for Obsidian.",
 	"author": "Toad",
