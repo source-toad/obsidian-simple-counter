@@ -1,5 +1,6 @@
 import { Plugin, MarkdownPostProcessorContext } from "obsidian";
-import "./styles.css";
+import './styles.css';
+import './settings';
 
 export default class CounterPlugin extends Plugin {
     counterRegex = /counter:\s*(\d+)\s*/;
